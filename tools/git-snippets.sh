@@ -21,3 +21,29 @@ git push
 # (fallback appended from recent session — timestamps were not yet enabled)
 # (fallback appended from recent session — timestamps were not yet enabled)
 # (fallback appended from recent session — timestamps were not yet enabled)
+git status
+git add tools/git-snippets.sh
+git commit -m "log: append today's git history (auto via log_git_today.sh)"
+git push
+git pull origin main --rebase
+git push origin main
+git log --oneline -5
+git diff --stat
+git branch -v
+git log --oneline -3
+git fetch origin
+git switch main
+git pull --rebase origin main   # fast-forward or rebase to match GitHub
+git update-index --chmod=+x tools/log_git_today.sh
+git commit -m "chore: mark log_git_today.sh executable"
+git add .gitattributes
+git commit -m "chore: enforce LF for *.sh"
+git pull --rebase
+git add -A && git commit -m "fix: robust daily collector (A/B/C sources)"; git push
+git add -A
+git commit -m "snippets: test capture"
+git add tools/log_git_today.sh .gitattributes
+git commit -m "fix: script-safe daily collector (no history builtin); enforce LF"
+git update-index --chmod=+x tools/log_and_push.sh
+git add tools/log_and_push.sh
+git commit -m "chore: add one-click log_and_push.sh"
