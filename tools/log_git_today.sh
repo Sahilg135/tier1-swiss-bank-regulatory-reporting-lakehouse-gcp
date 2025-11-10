@@ -16,8 +16,8 @@ fi
 # Pull the most up-to-date history from disk into this session.
 # - history -a writes new lines from this session to ~/.bash_history
 # - history -n reads any lines appended by other sessions
-history -a
-history -n
+# Read current session history and append all commands
+history >> "$LOG_FILE"
 
 # We expect history lines like:
 #   2025-11-10 21:04:55 git fetch --all
