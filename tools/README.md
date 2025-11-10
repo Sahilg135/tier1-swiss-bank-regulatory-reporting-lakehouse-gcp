@@ -58,3 +58,29 @@ echo "*.sh text eol=lf" >> .gitattributes
 git add .gitattributes
 git commit -m "chore: enforce LF for *.sh"
 git push
+
+```
+
+## 6. Daily routine
+
+### Option 1 - One click (recommended)
+```bash
+bash tools/log_and_push.sh
+
+```
+This does: pull -> collect -> commit (if changed) -> push.
+
+### Option 2 - Manual 
+```bash
+bash tools/log_git_today.sh
+tail -n 30 tools/git-snippets.sh   # verify
+git add tools/git-snippets.sh
+git commit -m "log: append today's git history"
+git push
+
+```
+
+
+
+
+
