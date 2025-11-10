@@ -47,3 +47,6 @@ git commit -m "fix: script-safe daily collector (no history builtin); enforce LF
 git update-index --chmod=+x tools/log_and_push.sh
 git add tools/log_and_push.sh
 git commit -m "chore: add one-click log_and_push.sh"
+git fetch "$REMOTE" || true
+git switch "$BRANCH" >/dev/null 2>&1 || git checkout "$BRANCH"
+git pull --rebase "$REMOTE" "$BRANCH"
