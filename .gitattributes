@@ -3,3 +3,4 @@
 *.mmd linguist-language=Markdown
 *.sh text eol=lf
 *.sh text eol=lf
+*.sh text eol=lf
