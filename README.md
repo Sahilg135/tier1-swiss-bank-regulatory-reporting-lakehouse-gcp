@@ -1,4 +1,4 @@
-# Regulatory Reporting Lakehouse — Tier-1 Swiss Bank (GCP)
+# Regulatory Reporting Lakehouse — Tier-1 Swiss Bank (GCP) · Sanitized Case Study
 
 > **Docs-only, sanitized case study.** No executable code. Names/data are illustrative; patterns are production-style and interview-ready.
 
