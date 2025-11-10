@@ -54,10 +54,11 @@ from_inmem="$(HISTTIMEFORMAT="%F %T " history 2>/dev/null \
       }
     ' | sed 's/\r$//')"
 
-# --- Source C: plain history (no timestamps): take last 300, keep "git " only ---
+# --- Source C: plain history (no reliable timestamps) ---
 from_plain="$(history 2>/dev/null | tail -n 300 \
-  | sed -E 's/^[[:space:]]*[0-9]+[[:space:]]+//' \
+  | sed -E 's/^[[:space:]]*[0-9]+[[:space:]]+([0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]][0-9]{2}:[0-9]{2}:[0-9]{2}[[:space:]]+)?//' \
   | awk '/^git /' | sed 's/\r$//')"
+
 
 # If A or B yielded non-empty, prefer A∪B; else use C.
 choose_and_append() {
