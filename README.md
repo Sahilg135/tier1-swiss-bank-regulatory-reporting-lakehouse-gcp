@@ -4,6 +4,46 @@
 
 ![Docs](https://img.shields.io/badge/docs-complete-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
 
+## L2 Architecture
+
+<!-- L2 Architecture -->
+```mermaid
+%% Source duplicated from assets/l2_arch.mmd
+%% Keep GitHub-friendly: plain rectangles, \n for line breaks
+flowchart TB
+  subgraph Perimeter[VPC‑SC + CMEK]
+    DS[(Ingestion)]
+    LS[Bronze]
+    SS[Silver]
+    BQ[(BigQuery raw/stage/gold)]
+    CMP[Orchestration]
+    DLP[PII Controls]
+  end
+  DS --> LS --> SS --> BQ --> EX[Exports]
+  CMP -. schedules .-> DS & SS & BQ & EX
+
+```
+
+
+---
+
+## Docs Index
+- **Getting Started** → [docs/getting-started.md](docs/getting-started.md)
+- **Architecture & Lineage** → [docs/lineage.md](docs/lineage.md)
+- **Controls & Compliance** → [docs/controls-and-compliance.md](docs/controls-and-compliance.md)
+- **SLOs** → [docs/slo.md](docs/slo.md)
+- **Operations Runbook** → [docs/operations-runbook.md](docs/operations-runbook.md)
+- **Migration Plan** → [docs/migration-plan.md](docs/migration-plan.md)
+- **Exports (Downstream Delivery)** → [docs/exports.md](docs/exports.md)
+- **Cost & Performance** → [docs/cost-and-performance.md](docs/cost-and-performance.md)
+- **Impact Metrics** → [docs/impact-metrics.md](docs/impact-metrics.md)
+- **Glossary** → [docs/glossary.md](docs/glossary.md)
+- **FAQ** → [docs/faq.md](docs/faq.md)
+- **Risk Log** → [docs/risk-log.md](docs/risk-log.md)
+
+> Note: This is a **docs-only** repo. Folders `dbt/`, `composer/`, and `sql/` are placeholders to show production structure.
+
+
 ## Quick Facts
 
 | Area | Choice |
