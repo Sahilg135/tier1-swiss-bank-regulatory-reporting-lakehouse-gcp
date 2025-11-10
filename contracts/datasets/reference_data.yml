@@ -1,0 +1,9 @@
+version: 1
+name: reference_data_instruments
+owner: t1s_reg
+schema:
+  primary_key: [instrument_id]
+  required:
+    - instrument_id: STRING
+    - mic: STRING
+    - currency: STRING

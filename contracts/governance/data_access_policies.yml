@@ -1,0 +1,4 @@
+- group: regops-readonly
+  access: bq.select gold; gcs:exports read
+- group: de-compute
+  access: gcs bronze/silver rw; bq raw/stage/gold write

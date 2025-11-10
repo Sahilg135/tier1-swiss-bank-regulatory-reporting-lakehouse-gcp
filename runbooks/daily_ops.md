@@ -1,0 +1,1 @@
+- Review DQ/SLO dashboards; verify manifest & hand‑off evidence; rotate keys per policy.

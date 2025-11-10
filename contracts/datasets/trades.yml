@@ -1,0 +1,21 @@
+version: 1
+name: trades
+owner: t1s_reg
+schema:
+  primary_key: [trade_id]
+  required:
+    - trade_id: STRING
+    - event_ts: TIMESTAMP
+    - instrument_id: STRING
+    - account_id: STRING
+    - side: STRING
+    - quantity: NUMERIC
+    - price: NUMERIC
+    - currency: STRING
+constraints:
+  - name: qty_positive
+    sql: quantity > 0
+  - name: price_positive
+    sql: price > 0
+  - name: side_enum
+    sql: side IN ("BUY","SELL")

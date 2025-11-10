@@ -1,0 +1,1 @@
+- Define date range; replay upstream; validate counts; re‑emit exports; attach evidence.

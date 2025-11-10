@@ -1,0 +1,6 @@
+- dataset: trades
+  retention: 7y
+- dataset: positions
+  retention: 7y
+- dataset: reg_submissions
+  retention: 10y

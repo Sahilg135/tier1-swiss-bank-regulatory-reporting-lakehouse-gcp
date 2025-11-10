@@ -1,0 +1,3 @@
+- dataset: kyc
+  fields: [client_id, national_id]
+  disposition: de-identify/tokenize upstream

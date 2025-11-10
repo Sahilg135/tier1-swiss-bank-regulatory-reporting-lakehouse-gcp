@@ -1,0 +1,1 @@
+- Restore silver/gold from backups; validate lineage; re‑schedule tasks.

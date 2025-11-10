@@ -1,0 +1,13 @@
+{
+  "as_of": "2024-11-30",
+  "dataset_version": "gold_1.0.0",
+  "row_counts": {
+    "F01_balance_sheet": 12345
+  },
+  "cut_off": "2024-11-30T23:00:00Z",
+  "checksums": "checksums.sha256",
+  "lineage_link": "docs/lineage.md",
+  "jobs": [
+    "reg_pack_tplus1:2024-12-01 (docs-only)"
+  ]
+}

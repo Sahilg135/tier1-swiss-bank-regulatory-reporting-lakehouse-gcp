@@ -1,0 +1,8 @@
+- dataset: trades
+  columns:
+    trade_id: CONFIDENTIAL
+    account_id: CONFIDENTIAL
+    instrument_id: INTERNAL
+    price: INTERNAL
+    quantity: INTERNAL
+    currency: PUBLIC

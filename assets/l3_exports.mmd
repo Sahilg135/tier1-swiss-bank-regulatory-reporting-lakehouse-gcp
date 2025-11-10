@@ -1,0 +1,9 @@
+flowchart LR
+  BQ[(Gold views)]
+  BQ --> STG[Staging area]
+  STG --> PKG[Packager]
+  PKG --> MAN[manifest.json]
+  PKG --> CS[checksums.sha256]
+  PKG --> FILES[CSV/XBRL files]
+  PKG --> HANDOFF[SFTP/SecBucket → RegOps]
+  HANDOFF --> ARCHIVE[Archive + retention]

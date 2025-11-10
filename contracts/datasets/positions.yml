@@ -1,0 +1,11 @@
+version: 1
+name: positions
+owner: t1s_reg
+schema:
+  primary_key: [position_id]
+  required:
+    - position_id: STRING
+    - asof_date: DATE
+    - instrument_id: STRING
+    - account_id: STRING
+    - quantity: NUMERIC

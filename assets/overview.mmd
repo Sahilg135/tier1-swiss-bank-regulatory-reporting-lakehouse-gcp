@@ -1,0 +1,5 @@
+flowchart LR
+  A[On‑prem Sources] --> B[Bronze (GCS)]
+  B --> C[Silver (Validated)]
+  C --> D[BigQuery Gold]
+  D --> E[Exports (XBRL/CSV + manifest + checksums) → RegOps]
