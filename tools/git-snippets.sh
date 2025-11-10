@@ -18,3 +18,5 @@ git push
 
 # ===== 2025-11-11 =====
 # (auto-appended entries for this date will appear below)
+# (fallback appended from recent session — timestamps were not yet enabled)
+# (fallback appended from recent session — timestamps were not yet enabled)
