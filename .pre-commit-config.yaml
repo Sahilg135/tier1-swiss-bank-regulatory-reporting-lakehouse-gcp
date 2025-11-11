@@ -14,12 +14,11 @@ repos:
       - id: check-added-large-files
       - id: detect-private-key
 
-  # Markdown formatting/linting that plays nicely with GitHub
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
-    hooks:
-      - id: mdformat
-        additional_dependencies:
-          - mdformat-gfm==0.3.5  # tables/task-lists
-          - mdformat-frontmatter==2.0.6
-        files: \.md$
+# Markdown formatting/linting that plays nicely with GitHub
+- repo: https://github.com/executablebooks/mdformat
+  rev: 0.7.17
+  hooks:
+    - id: mdformat
+      additional_dependencies:
+        - mdformat-gfm>=0.3.5
+      files: \.md$
