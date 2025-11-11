@@ -4,6 +4,17 @@
 
 ![Docs](https://img.shields.io/badge/docs-complete-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
 
+> ⚙️ **Note on Structure:**  
+> This repository represents a **docs-only case study**.  
+> The following folders exist purely as **placeholders** to illustrate a production-grade layout:
+>
+> - `dbt/` – transformation layer (models, macros, configs)  
+> - `composer/` – orchestration DAGs for dataflow jobs and checks  
+> - `sql/` – validation or reporting queries used in regulatory pipelines  
+>
+> These folders contain no executable code in this sanitized version; they are retained to preserve authentic Data Engineering structure.
+
+
 ## L2 Architecture
 
 <!-- L2 Architecture -->
