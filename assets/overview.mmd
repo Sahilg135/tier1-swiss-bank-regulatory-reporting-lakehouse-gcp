@@ -1,5 +1,1 @@
-flowchart LR
-A[Sources] --> B[Bronze (GCS)]
-B --> C[Silver (BigQuery)]
-C --> D[Gold (BigQuery)]
-B -.-> E[Dead-letter bucket]
+flowchart LR; A[Sources] --> B[Bronze (GCS)] --> C[Silver (BigQuery)] --> D[Gold (BigQuery)]; B -.-> E[Dead-letter bucket];
