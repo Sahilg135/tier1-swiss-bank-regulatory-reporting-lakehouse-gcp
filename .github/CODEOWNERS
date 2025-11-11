@@ -1,0 +1,6 @@
+# Default owner(s) for everything in this repo
+*           @Sahilg135
+
+# Optional explicit ownership for doc areas
+/docs/      @Sahilg135
+/runbooks/  @Sahilg135
