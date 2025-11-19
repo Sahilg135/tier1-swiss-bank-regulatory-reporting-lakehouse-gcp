@@ -55,3 +55,10 @@ git commit -m "log: append today's git history (auto via log_and_push.sh)"
 git push "$REMOTE" "$BRANCH"
 git add tools/log_and_push.sh .gitattributes
 git commit -m "chore: add one-click tools/log_and_push.sh"
+git staus
+git branch
+git pull origin main
+git switch -c chore/ops-ci-metadata
+git add .pre-commit-config.yaml .github/CODEOWNERS RUNBOOK.md README.md
+git commit -m "chore(ops): add pre-commit config, CODEOWNERS, and root RUNBOOK; link from README"
+git push -u origin chore/ops-ci-metadata
